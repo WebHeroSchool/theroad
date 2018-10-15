@@ -3,12 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
-  <link rel="stylesheet" href="style.css">
   <title>title</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <nav class="topnav" id="myTopnav">
+    <a href="#" class="active">Домой</a>
+    <a href="#">Новости</a>
+    <a href="#">Контакты</a>
+    <a href="#">О нас</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+  </nav>
   <h1>Main Heading</h1>
   <h2>Sub Heading</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nulla, facilis consectetur alias reiciendis quasi voluptates sed illo vitae nisi, ad, iure minima ipsam iste architecto illum incidunt nihil aut.</p>
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
 </body>
 </html>
